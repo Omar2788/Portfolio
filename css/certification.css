@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.nav {
+    overflow: hidden;
+    background-color:black;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 200px;
+}
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+.nav a.active {
+    background-color:rgb(103, 10, 149) ;
+    color: white;
+}
+.dec{
+    width: 25px;
+    height: 310%;
+    background-color: #38388d;
+    position: absolute;
+}
+.container{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.certif {
+    margin: 60px;
+    width: 600px;
+    height: 450px;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        100% 100%,
+        0% 100%,
+        0% 75%,
+        0% 75%
+  );
+
+    animation: clipOut 4s ;
+  }
+  @keyframes clipOut {
+    from {
+      clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+  }
+
+  .fleshh{
+    text-align: end;
+    float: right;
+    font-size: 40px;
+    position: fixed;
+    color: #38388d;
+    cursor: pointer;
+  }
+.fleshh:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+  .flesh{
+    margin-right: 10px;
+    float: right;
+    width: 40px;
+  }
